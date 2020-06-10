@@ -1,5 +1,8 @@
 # effectCode
 
+activate dev
+python gen_sql.py
+
 ```python
 
 db = pymysql.connect(host='localhost', user='root', password='root111', port=3306, db='temp_my')

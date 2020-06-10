@@ -21,7 +21,7 @@ def create_table(data):
     # print("tableName: ", tableName)
     # DROP TABLE IF EXISTS `qrtz_job_details`;
     # CREATE TABLE `qrtz_job_details` (
-    head = "DROP TABLE IF EXISTS `" + tableName + "`;\n" + "CREATE TABLE `" + tableName + "` (\n"
+    head = "DROP TABLE IF EXISTS `" + tableName + "`;\n CREATE TABLE `" + tableName + "` (\n"
 
     inner = [" "]
     split_str = "|"
