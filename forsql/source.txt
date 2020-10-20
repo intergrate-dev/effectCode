@@ -1,0 +1,47 @@
+[s_1, id]
+MDTRT_EVT_ID	就诊事件ID	varchar(30)
+MEDCASNO	病案号	varchar(30)
+PRFS	职业	varchar(50)
+ADDR_PROV_ADMDVS	现住址-省（区、市）行政区划	VARCHAR(6)
+ADDR_CITY_ADMDVS	现住址-市行政区划	VARCHAR(6)
+ADDR_COTY_ADMDVS	现住址-县行政区划	VARCHAR(6)
+DETL_ADDR	现住址-详细地址	varchar(200)
+CONER_NAME	联系人姓名	varchar(50)
+CONER_RLTS	联系人关系	varchar(20)
+CONER_ADDR_PROV_ADMDVS	联系人住址-省（区、市）行政区划	VARCHAR(6)
+CONER_ADDR_CITY_ADMDVS	联系人住址-市行政区划	VARCHAR(6)
+CONER_ADDR_COTY_ADMDVS	联系人住址-县行政区划	VARCHAR(6)
+CONER_DETL_ADDR	联系人住址-详细地址	varchar(200)
+CONER_TEL	联系人电话	varchar(20)
+NWB_ADM_TYPE	新生儿入院类型	varchar(3)
+NWB_BIR_WT	新生儿出生体重	numeric(8,2)
+NWB_ADM_WT	新生儿入院体重	numeric(8,2)
+DIAS_DEPT	诊断科别	varchar(50)
+create_date 创建日期    datetime
+update_date 更新日期    datetime
+
+[s_2, id]
+MDTRT_EVT_ID	就诊事件ID	varchar(30)
+MEDCASNO	病案号	varchar(30)
+DISE_CODE	诊断代码	varchar(20)
+DISE_NAME	诊断名称	VARCHAR(300)
+OPRN_NAME	手术操作名称	varchar(300)
+OPRN_CODE	手术操作代码	varchar(30)
+create_date 创建日期    datetime
+update_date 更新日期    datetime
+
+[s_3, id]
+ADM_WAY	入院途径	varchar(6)
+TRT_TYPE	治疗类别	varchar(6)
+ADM_TIME	入院时间	datetime
+ADM_DEPT	入院科室	varchar(50)
+REFL_DEPT	转院科别	varchar(50)
+DSCG_TIME	出院时间	datetime
+DSCG_DEPT	出院科别	varchar(20)
+OTP_WM_DISE	门（急）诊诊断（西医诊断）	varchar(200)
+WM_DISE_CODE	门（急）诊诊断（西医诊断）疾病代码	varchar(20)
+OTP_TCM_DISE	门（急）诊诊断（中医诊断）	varchar(200)
+TCM_DISE_CODE	门（急）诊诊断（中医诊断）疾病代码	varchar(20)
+create_date 创建日期    datetime
+update_date 更新日期    datetime
+
