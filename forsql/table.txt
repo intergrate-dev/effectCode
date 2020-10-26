@@ -1,0 +1,9 @@
+表名：s_1
+序号	 字段	 名称	 数据类型	 是否必填	 注释
+1	id	 	bigint(20)	是	 	2	mdtrt_evt_id	就诊事件ID	varchar(30)	否	 	3	medcasno	病案号	varchar(30)	否	 	4	prfs	职业	varchar(50)	否	 	5	addr_prov_admdvs	现住址-省（区、市）行政区划	VARCHAR(6)	否	 	6	addr_city_admdvs	现住址-市行政区划	VARCHAR(6)	否	 	7	addr_coty_admdvs	现住址-县行政区划	VARCHAR(6)	否	 	8	detl_addr	现住址-详细地址	varchar(200)	否	 	9	coner_name	联系人姓名	varchar(50)	否	 	10	coner_rlts	联系人关系	varchar(20)	否	 	11	coner_addr_prov_admdvs	联系人住址-省（区、市）行政区划	VARCHAR(6)	否	 	12	coner_addr_city_admdvs	联系人住址-市行政区划	VARCHAR(6)	否	 	13	coner_addr_coty_admdvs	联系人住址-县行政区划	VARCHAR(6)	否	 	14	coner_detl_addr	联系人住址-详细地址	varchar(200)	否	 	15	coner_tel	联系人电话	varchar(20)	否	 	16	nwb_adm_type	新生儿入院类型	varchar(3)	否	 	17	nwb_bir_wt	新生儿出生体重	numeric(8,2)	否	 	18	nwb_adm_wt	新生儿入院体重	numeric(8,2)	否	 	19	dias_dept	诊断科别	varchar(50)	否	 	20	create_date	创建日期	datetime	否	 	21	update_date	更新日期	datetime	否	 	
+表名：s_2
+序号	 字段	 名称	 数据类型	 是否必填	 注释
+1	id	 	bigint(20)	是	 	2	mdtrt_evt_id	就诊事件ID	varchar(30)	否	 	3	medcasno	病案号	varchar(30)	否	 	4	dise_code	诊断代码	varchar(20)	否	 	5	dise_name	诊断名称	VARCHAR(300)	否	 	6	oprn_name	手术操作名称	varchar(300)	否	 	7	oprn_code	手术操作代码	varchar(30)	否	 	8	create_date	创建日期	datetime	否	 	9	update_date	更新日期	datetime	否	 	
+表名：s_3
+序号	 字段	 名称	 数据类型	 是否必填	 注释
+1	id	 	bigint(20)	是	 	2	adm_way	入院途径	varchar(6)	否	 	3	trt_type	治疗类别	varchar(6)	否	 	4	adm_time	入院时间	datetime	否	 	5	adm_dept	入院科室	varchar(50)	否	 	6	refl_dept	转院科别	varchar(50)	否	 	7	dscg_time	出院时间	datetime	否	 	8	dscg_dept	出院科别	varchar(20)	否	 	9	otp_wm_dise	门（急）诊诊断（西医诊断）	varchar(200)	否	 	10	wm_dise_code	门（急）诊诊断（西医诊断）疾病代码	varchar(20)	否	 	11	otp_tcm_dise	门（急）诊诊断（中医诊断）	varchar(200)	否	 	12	tcm_dise_code	门（急）诊诊断（中医诊断）疾病代码	varchar(20)	否	 	13	create_date	创建日期	datetime	否	 	14	update_date	更新日期	datetime	否	 	
