@@ -21,7 +21,8 @@ def load_data(file):
         if l.strip().startswith('CREATE TABLE') and l.index("(") > 0:
             data['t_name'] = extr_midd(l, '`')
         elif "PRIMARY KEY" in l:
-            data['pk_f'] = extr_midd(l, '`')
+            # data['pk_f'] = extr_midd(l, '`')
+            pk_f.append(extr_midd(l, '`'))
         elif "ENGINE=" in l:
             data['t_desc'] = ''
             if 'COMMENT=' in l:
@@ -72,7 +73,8 @@ def set_table_title(table, cols, col_width_dic, title):
 
 def set_table_cords(table, records):
     for No, f, f_name, f_type, is_must, comment in records:
-        if f == data['pk_f']:
+        # if f == data['pk_f']:
+        if f in pk_f:
             f_name = '主键' + f
         row_cells = table.add_row().cells
         row_cells[0].text = str(No)
@@ -109,12 +111,13 @@ def gen_db_list():
 if __name__ == '__main__':
     for f_name in os.listdir(sour_dir):
         data = {}
+        pk_f = []
         arr = [0] * 5
         db_list = []
         document = Document()
         document.styles['Normal'].font.name = u'宋体'
         # if os.path.isfile(f_name):
-        if '.' in f_name:
+        if '.sql' in f_name :
             document.add_heading('数据库表', level=2)
             load_data(sour_dir + f_name)
             if len(db_list) > 0:
